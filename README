@@ -1,0 +1,60 @@
+CoffeeTch API: Sistema de Gestão e Pedidos para Cafeterias
+📝 Descrição
+CoffeeTch é a API backend do sistema de gestão e pedidos para cafeterias. Construída utilizando Node.js e Express.js, ela fornece a infraestrutura essencial para conectar a aplicação frontend (web/mobile) com o banco de dados MySQL, gerenciando informações como: usuários, produtos, pedidos e status.
+
+Este projeto visa alta performance e uma estrutura clara para futuros desenvolvedores.
+
+✨ Tecnologias Utilizadas
+🚀 Começando
+Estas instruções permitirão que você configure e execute o projeto CoffeeTch localmente.
+
+Pré-requisitos
+Você precisará ter instalado na sua máquina:
+
+Node.js (versão 18+ ou superior, compatível com a versão 5 do Express).
+
+npm (instalado junto com o Node.js).
+
+Um servidor MySQL em execução (por exemplo, via MySQL Workbench ou Docker).
+
+Git para clonar o repositório.
+
+Instalação e Configuração
+Clone o Repositório:
+
+Instale as Dependências:
+
+Configuração do Banco de Dados (.env): O projeto espera que as credenciais do banco de dados estejam em um arquivo .env na raiz do projeto. Crie o arquivo e adicione as seguintes variáveis, substituindo os valores pelos seus:
+
+Estrutura do Banco de Dados: Certifique-se de que o schema (coffeetech_node) esteja criado em seu servidor MySQL.
+
+Executando o Projeto
+Para iniciar o servidor backend:
+
+Após iniciar, você verá a mensagem de sucesso no console:
+
+🔌 MySQL conectado com sucesso! (Conexão estabelecida com o DB)
+
+🚀 Servidor rodando na porta 3000 (Servidor Express em funcionamento)
+
+O backend estará acessível em http://localhost:3000. Se houver arquivos estáticos na pasta public (como index.html), eles serão servidos na raiz.
+
+📄 Estrutura do Projeto
+server.js: Ponto de entrada principal da aplicação Express.
+
+db.js: Módulo de conexão assíncrona com o MySQL usando mysql2/promise.
+
+package.json: Lista de dependências e scripts de inicialização.
+
+.env: Configuração das credenciais do banco de dados (não versionado).
+
+🤝 Contribuição
+Faça um Fork do Projeto.
+
+Crie sua Branch de Feature: git checkout -b feature/sua-feature-incrivel.
+
+Commit suas alterações.
+
+Faça Push para a Branch.
+
+Abra um Pull Request.
